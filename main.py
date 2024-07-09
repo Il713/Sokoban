@@ -26,8 +26,8 @@ class Game:
             for y in os.listdir(sprite+'/'+x):
                 self.char[x]+=[pygame.image.load(sprite+'/'+x+'/'+y)]
                 self.char2[x]+=[pygame.image.load(sprite+'/'+x+'/'+y)]
-        self.sprites={'#':pygame.image.load('wall.png'),'$':pygame.image.load('box.png'),'@':self.char,'.':pygame.Surface((20,20)),
-                      '*':pygame.image.load('box.png'),'+':self.char2}
+        self.sprites={'#':pygame.image.load('sprite/wall.png'),'$':pygame.image.load('sprite/box.png'),'@':self.char,'.':pygame.Surface((20,20)),
+                      '*':pygame.image.load('sprite/box.png'),'+':self.char2}
         self.sprites['*'].set_alpha(50)
         self.sprites['.'].fill((250,100,100))
         for x in self.sprites:

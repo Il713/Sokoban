@@ -70,7 +70,7 @@ class Game:
         self.lv_name=1
         self.run=True
         if self.lv_name:
-            self.level,self.x,self.y=extract('soko2.txt')
+            self.level,self.x,self.y=extract('level.txt')
             n=0
             for x in self.level:
                 if n<len(x):

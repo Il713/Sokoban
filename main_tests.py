@@ -2,7 +2,7 @@ import pygame
 from level_extraction import extract
 import os
 from copy import deepcopy
-from truc.to_slice2 import switch,slicing
+from tools.to_slice2 import switch,slicing
 from PIL import Image as img
 fps=20
 
